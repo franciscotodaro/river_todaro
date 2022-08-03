@@ -1,0 +1,461 @@
+
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box  ;
+}
+
+/* HEADEEEEEEEEEEEEEEEEEEER */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 1rem 0rem;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    height: 7rem;
+    background-color: rgb(204 204 204);
+    position: sticky;
+    top: 0px;
+}
+.listas{
+    list-style-type: none;
+    font-family: 'Inconsolata', monospace;
+    
+   }
+
+.listas li{
+    display: inline-block;
+    margin: 1rem 1rem;
+    font-size: 20px;
+}
+ 
+
+.listas li a{
+    color: black;
+}
+
+.imagen{
+    width: 100px;
+    border-radius: 30rem;
+}
+
+/* HEADEEEEEEEEEEEEEEEEEER */
+
+/* INDEEEEEEEEEEEEEEEX */
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 450px 450px;
+    grid-template-areas: "a1 a2"
+                         "a3 a4";
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding-top: 1.5rem;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+    
+
+
+}
+
+.imagen_main{
+    width: 620px;
+    height: 452px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+    margin-top: 4px;
+       
+}
+
+.logo{
+    width: 20%;    
+}
+
+.tarjeta_uno{
+    text-align: center;
+    width: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;    padding: 3rem;
+    background-color: rgb(204 204 204);
+    font-family: 'Bebas Neue', cursive;
+    height: 350px;
+    grid-area: a3;
+   
+
+}
+.tarjeta_dos{
+    text-align: center;
+    width: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;    padding: 3rem;
+    background-color: rgb(204 204 204);
+    font-family: 'Bebas Neue', cursive;
+    height: 350px;
+    grid-area: a4;
+}
+
+.contenedor_uno{
+    background-color: rgb(204 204 204);
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 1px solid black;
+    border-left: 2px solid black;
+    text-align: center;
+    height: 452px;
+    width: 600px;
+   
+   
+   }
+
+.contenedor_uno h1{
+    
+    color: rgb(206 0 27);
+    font-family: 'Inconsolata', monospace;
+    font-style: italic; 
+    font-weight: 900; 
+    border-bottom: 6px double black;
+    display: inline-block;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+
+}
+.contenedor_uno h2{
+  
+    color: rgb(206 0 27);
+    font-family: 'Inconsolata', monospace;
+    
+    
+
+}
+.contenedor_uno p{
+
+    font-family: 'Bebas Neue', cursive;
+    padding: 1rem;
+    color: rgb(206 0 27);   
+}
+
+@media only screen and (max-width: 600px){
+
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    .imagen_main{
+        height: 90%;
+        width: 90%;
+        margin-left: 1.5rem;               
+    }
+    .tarjeta_dos{
+        font-size: 15px;
+     
+    }
+    .tarjeta_uno{
+        font-size: 15px;
+        height: 380px;
+       }
+    .contenedor_uno{
+        font-size: 15px;
+        height: 500px;
+        width: 90%;  
+    }
+   
+}
+/* INDEEEEEEEEEEEEEEEX */
+
+/* ESTADIO RIVEEEEEEEEEEER  */
+
+.best_estadio{
+    width: 600px;
+    height: 450px;
+    margin: 1.5em;  
+    border: 3px solid rgb(0, 0, 0);
+} 
+
+.main_estadio{
+    padding: 2rem ;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+    
+
+}
+
+.div_estadio{
+    background-color: rgb(204 204 204);
+    border: 3px solid black;
+    display: grid;
+    height: 1022px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 490px 490px;
+    grid-template-areas: "a1 a1"
+                         "a2 a3" ;
+    
+}
+
+
+.iframe_estadio{
+    margin:1.5rem;
+    border: 3px solid rgb(0, 0, 0);
+    grid-area: a2;
+    width: 580px;
+    height: 450px;
+   
+}
+.best_estadio{
+    grid-area: a3;
+} 
+.texto{
+    grid-area: a1;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(0, 0, 0);
+    padding: 2rem ;
+    margin-bottom: 2rem;
+    justify-content: space-around;    
+            
+}
+
+.templo{
+    height: 250px;
+    width: 1180px;
+    border: 3px solid rgb(0, 0, 0);
+} 
+
+
+h2{
+    margin-bottom: 1rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+@media only screen and (max-width: 600px ){
+    .div_estadio{
+        display: flex;
+        flex-direction: column;
+        height: 1640px;
+        justify-content: space-around;
+        align-content: center;
+    }
+    .templo{
+        width: 90%;
+        height: 250px;        
+    }
+    .best_estadio{
+        width: 90%;
+        height: 250px;        
+    }
+    .iframe_estadio{
+        width: 90%;
+        height: 300px;        
+    }
+   
+}
+/* ESTADIO RIVEEEEEEEEEER */
+
+/* CONTACTO RIVEEEEEEEEER */
+
+
+.main_contacto{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 500px;
+    grid-template-areas: "a1 a2";
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+    
+}
+.mensaje{    
+    font-family: 'Bebas Neue', cursive;
+    margin:1.5rem 1.5rem ;
+    grid-area: a1; 
+}
+
+.mensaje h1{
+    margin: 2rem;
+    text-align: start;
+    font-family: 'Inconsolata', monospace;    
+}
+
+.formulario{
+    font-family: 'Bebas Neue', cursive;
+    border: 3px solid black;
+    padding: 1rem;
+    text-align: center;     
+    background-color: rgb(204 204 204);
+    grid-area: a2;
+}
+
+@media only screen and (max-width:600px) {
+    .main_contacto{
+        display: flex;
+        flex-direction: column;
+        height: 750px;
+        gap: 1rem;
+    }
+    .formulario{
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* CONTACTO RIVEEEEEEEEER */
+
+/* LIBERTADORES RIVEEEEEEEER */
+
+
+.main_libertadores{
+    height: 1750px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 60%;
+    grid-template-rows: 400px 400px 400px 400px;
+    grid-template-areas: "a1"
+                         "a2"
+                         "a3"
+                         "a4";
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    gap: 0.8rem;
+    background-color: rgb(204 204 204);
+    margin-left: 20%;
+    border: 3px solid rgb(150, 0, 0);   
+ }
+
+ .h2_lib{
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    background-color: rgb(150, 0, 0);
+    padding: 1rem;
+ }
+
+ .video{
+    border: 3px solid black;
+ }
+
+ .h1_libertadores{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    padding: 1rem;
+ }
+
+ .fondo{
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+    height: 1825px;
+}
+
+@media only screen and (max-width:600px){
+    .main_libertadores{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .iframe{
+        height: 65%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .video{
+        width: 90%;
+    }
+}
+
+
+/* LIBERTADORES RIVEEEEEEEER */
+
+/* GALERIAAAA RIVEEEEEEEER */
+
+.galeria{    
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+    
+    padding: 2rem;
+}
+
+
+.fotos_uno{
+    width: 100%;
+    height: auto;
+    border: 3px solid rgb(0, 0, 0);        
+}
+
+.contenedor_galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    grid-gap: 10px;    
+}
+
+
+.galeria_h1{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-style: italic; 
+    font-weight: 900; 
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.fotos_uno:hover{
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 15px;
+    transition: all 2s;   
+    transform: scale(1.15);
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 600px ){
+    .contenedor_galeria{
+        display: flex;
+        flex-direction: column;    
+    }
+    header{
+        position: inherit;
+        height: 150px;    
+        
+    }       
+}
+
+
+/* GALERIAAAA RIVEEEEEEEER */
+
+
+/* FOOTTTTTTTTTTTEEEEEEEER */
+
+footer{
+    height: 4.5rem;
+    border-top: 3px solid black;
+    text-align: center;
+    background-color: rgb(204 204 204);
+    }
+
+footer p{
+    margin-top: 1.5rem;
+    font-size: larger;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+}
+
+/* FOOTTTTTTTTTTTEEEEEEEER */
+
