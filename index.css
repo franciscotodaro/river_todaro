@@ -18,6 +18,7 @@ header{
     position: sticky;
     top: 0px;
 }
+
 .listas{
     list-style-type: none;
     font-family: 'Inconsolata', monospace;
@@ -71,6 +72,7 @@ header{
     border-right: 2px solid black;
     border-left: 1px solid black;
     margin-top: 4px;
+    margin-bottom: 5px;
        
 }
 
@@ -184,9 +186,9 @@ header{
 .main_estadio{
     padding: 2rem ;
     background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
-    
-
 }
+
+
 
 .div_estadio{
     background-color: rgb(204 204 204);
@@ -202,15 +204,17 @@ header{
 
 
 .iframe_estadio{
-    margin:1.5rem;
+    margin:4rem 1.5rem 1.5rem 1.5rem;
     border: 3px solid rgb(0, 0, 0);
     grid-area: a2;
     width: 580px;
     height: 450px;
+
    
 }
 .best_estadio{
     grid-area: a3;
+    margin-top: 4rem;
 } 
 .texto{
     grid-area: a1;
@@ -267,7 +271,7 @@ h2{
 
 .main_contacto{
     width: 100%;
-    height: 500px;
+    height: 550px;
     display: grid;
     grid-template-columns: 60% 30%;
     grid-template-rows: 500px;
@@ -293,10 +297,11 @@ h2{
 .formulario{
     font-family: 'Bebas Neue', cursive;
     border: 3px solid black;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;     
     background-color: rgb(204 204 204);
     grid-area: a2;
+    margin-top: 22px;
 }
 
 @media only screen and (max-width:600px) {
@@ -432,7 +437,7 @@ h2{
     }
     header{
         position: inherit;
-        height: 150px;    
+        height: 200px;    
         
     }       
 }
@@ -444,7 +449,7 @@ h2{
 /* FOOTTTTTTTTTTTEEEEEEEER */
 
 footer{
-    height: 4.5rem;
+    height: 8rem;
     border-top: 3px solid black;
     text-align: center;
     background-color: rgb(204 204 204);
@@ -456,6 +461,26 @@ footer p{
     font-family: 'Inconsolata', monospace;
     font-weight: 900;
 }
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+.bi-instagram{
+    font-size: 30px;
+    color: rgb(150, 0, 0);  
+}
+.bi-twitter{
+    font-size: 30px;
+    color: rgb(150, 0, 0);   
+}
+.bi-facebook{
+    font-size: 30px;
+    color: rgb(150, 0, 0);   
+}
+.iconos{
+    display: flex;
+    justify-content: center ;
+    gap: 3rem;
+}
+
 
 /* FOOTTTTTTTTTTTEEEEEEEER */
 
