@@ -194,7 +194,7 @@
     .div_estadio{
         background-color: rgb(204 204 204);
         border: 3px solid black;
-        height: 1100px;
+        height: 1650px;
     
         
     }
@@ -237,12 +237,7 @@
         margin-bottom: 1rem;
         font-family: 'Inconsolata', monospace;
     }
-    
-    .contenedor_iframe{
-        display: flex;
-        justify-content: space-around;
-    
-    }
+ 
     
     
     @media only screen and (max-width: 600px ){
@@ -311,7 +306,7 @@
         .main_contacto{
             display: flex;
             flex-direction: column;
-            height: 750px;
+            height: 900px;
             gap: 1rem;
         }
         .formulario{
@@ -388,10 +383,10 @@
     /* LIBERTADORES RIVEEEEEEEER */
     
     /* GALERIAAAA RIVEEEEEEEER */
-    
+   
     .galeria{    
         background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
-        
+    
         padding: 2rem;
     }
     
@@ -400,6 +395,14 @@
         width: 100%;
         height: auto;
         border: 3px solid rgb(0, 0, 0);        
+    }
+    
+    .contenedor_galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 10px;    
     }
     
     
@@ -417,26 +420,32 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         border-radius: 15px;
         transition: all 2s;   
-        transform: scale(1.05);
+        transform: scale(1.15);
+    
+    }
+        
+    @media only screen and (max-width: 600px ){
+      
+        header{
+            position: inherit;
+            height: 250px;    
+    
+        }    
+        .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 3rem;        
+        }   
+        .fotos_uno{
+            width: 150px;
+            height: 150px;
+        }
         
     }
     
-    
-    
-    
-    
-    @media only screen and (max-width: 600px ){
-        .contenedor_galeria{
-            display: flex;
-            flex-direction: column;    
-        }
-        header{
-            position: inherit;
-            height: 200px;    
-            
-        }       
-    }
-    
+     
     
     /* GALERIAAAA RIVEEEEEEEER */
     
