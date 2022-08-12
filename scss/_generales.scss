@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box  ;
+    }
+    
+    /* HEADEEEEEEEEEEEEEEEEEEER */
+    
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 1rem 0rem;
+        border-bottom: 3px solid rgb(0, 0, 0);
+        height: 7rem;
+        background-color: rgb(204, 204, 204);
+        position: sticky;
+        top: 0px;
+    }
+    
+    .listas{
+        list-style-type: none;
+        font-family: 'Inconsolata', monospace;
+        
+       }
+    
+    .listas li{
+        display: inline-block;
+        margin: 1rem 1rem;
+        font-size: 20px;
+    }
+     
+    
+    .listas li a{
+        color: black;
+    }
+    
+    .imagen{
+        width: 100px;
+        border-radius: 30rem;
+    }
+    
+    /* HEADEEEEEEEEEEEEEEEEEER */
+    /* FOOTTTTTTTTTTTEEEEEEEER */
+    
+     footer{
+        height: 8rem;
+        border-top: 3px solid black;
+        text-align: center;
+        background-color: rgb(204, 204, 204);
+        }
+    
+    footer p{
+        margin-top: 1.5rem;
+        font-size: larger;
+        font-family: 'Inconsolata', monospace;
+        font-weight: 900;
+    }
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+    
+    .bi-instagram{
+        font-size: 30px;
+        color: rgb(150, 0, 0);  
+    }
+    .bi-twitter{
+        font-size: 30px;
+        color: rgb(150, 0, 0);   
+    }
+    .bi-facebook{
+        font-size: 30px;
+        color: rgb(150, 0, 0);   
+    }
+    .iconos{
+        display: flex;
+        justify-content: center ;
+        gap: 3rem;
+    }
+    
+    
+    /* FOOTTTTTTTTTTTEEEEEEEER */

@@ -1,0 +1,90 @@
+    /* ESTADIO RIVEEEEEEEEEEER  */
+    
+    .best_estadio{
+        width: 600px;
+        height: 450px;
+        margin: 1.5em;  
+        border: 3px solid rgb(0, 0, 0);
+    } 
+    
+    .main_estadio{
+        padding: 2rem ;
+        background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+    }
+    
+    
+    
+    .div_estadio{
+        background-color: rgb(204, 204, 204);
+        border: 3px solid black;
+        height: 1650px;
+
+        .texto{
+            grid-area: a1;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Bebas Neue', cursive;
+            color: rgb(150, 0, 0);
+            padding: 2rem ;
+            margin-bottom: 2rem;
+            justify-content: space-around;    
+                    
+        }
+    
+        
+    }
+    
+    
+    .iframe_estadio{
+        margin:4rem 1.5rem 1.5rem 1.5rem;
+        border: 3px solid rgb(0, 0, 0);
+        grid-area: a2;
+        width: 580px;
+        height: 450px;
+    
+       
+    }
+    .best_estadio{
+        grid-area: a3;
+        margin-top: 4rem;
+    } 
+    
+    
+    .templo{
+        height: 250px;
+        width: 1180px;
+        border: 3px solid rgb(0, 0, 0);
+    } 
+    
+    
+    h2{
+        margin-bottom: 1rem;
+        font-family: 'Inconsolata', monospace;
+    }
+ 
+    
+    
+    @media only screen and (max-width: 600px ){
+        .div_estadio{
+            display: flex;
+            flex-direction: column;
+            height: 1640px;
+            justify-content: space-around;
+            align-content: center;
+        }
+        .templo{
+            width: 90%;
+            height: 250px;        
+        }
+        .best_estadio{
+            width: 90%;
+            height: 250px;        
+        }
+        .iframe_estadio{
+            width: 90%;
+            height: 300px;        
+        }
+       
+    }
+    /* ESTADIO RIVEEEEEEEEEER */

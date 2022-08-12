@@ -1,0 +1,64 @@
+    /* LIBERTADORES RIVEEEEEEEER */
+    
+    
+    .main_libertadores{
+        height: 1750px;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 60%;
+        grid-template-rows: 400px 400px 400px 400px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4";
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        gap: 0.8rem;
+        background-color: rgb(204, 204, 204);
+        margin-left: 20%;
+        border: 3px solid rgb(150, 0, 0);   
+     }
+    
+     .h2_lib{
+        font-family: 'Inconsolata', monospace;
+        text-align: center;
+        background-color: rgb(150, 0, 0);
+        padding: 1rem;
+     }
+    
+     .video{
+        border: 3px solid black;
+     }
+    
+     .h1_libertadores{
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        padding: 1rem;
+     }
+    
+     .fondo{
+        background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+        height: 1825px;
+    }
+    
+    @media only screen and (max-width:600px){
+        .main_libertadores{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .iframe{
+            height: 65%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .video{
+            width: 90%;
+        }
+    }
+    
+    
+    /* LIBERTADORES RIVEEEEEEEER */

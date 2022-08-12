@@ -1,0 +1,66 @@
+    /* GALERIAAAA RIVEEEEEEEER */
+   
+    .galeria{    
+        background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+    
+        padding: 2rem;
+    }
+    
+    
+    .fotos_uno{
+        width: 100%;
+        height: auto;
+        border: 3px solid rgb(0, 0, 0);        
+    }
+    
+    .contenedor_galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 10px;    
+    }
+    
+    
+    .galeria_h1{
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        font-style: italic; 
+        font-weight: 900; 
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .fotos_uno:hover{
+    
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 15px;
+        transition: all 2s;   
+        transform: scale(1.15);
+    
+    }
+        
+    @media only screen and (max-width: 600px ){
+      
+        header{
+            position: inherit;
+            height: 250px;    
+    
+        }    
+        .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 3rem;        
+        }   
+        .fotos_uno{
+            width: 150px;
+            height: 150px;
+        }
+        
+    }
+    
+     
+    
+    /* GALERIAAAA RIVEEEEEEEER */

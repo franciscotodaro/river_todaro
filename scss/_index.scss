@@ -1,0 +1,125 @@
+
+    /* INDEEEEEEEEEEEEEEEX */
+    
+    .main{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 450px 450px;
+        grid-template-areas: "a1 a2"
+                             "a3 a4";
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        padding-top: 1.5rem;
+        background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+        
+    
+    
+    }
+    
+    .imagen_main{
+        width: 620px;
+        height: 452px;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 1px solid black;
+        margin-top: 4px;
+        margin-bottom: 5px;
+           
+    }
+    
+    .logo{
+        width: 20%;
+          
+    }
+    
+    .tarjeta_uno{
+        text-align: center;
+        width: 20rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;    padding: 3rem;
+        background-color: rgb(204, 204, 204);
+        font-family: 'Bebas Neue', cursive;
+        height: 300px;
+        grid-area: a3;
+       
+    
+    }
+    .tarjeta_dos{
+        text-align: center;
+        width: 20rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;    padding: 3rem;
+        background-color: rgb(204, 204, 204);
+        font-family: 'Bebas Neue', cursive;
+        height: 300px;
+        grid-area: a4;
+    }
+    
+    .contenedor_uno{
+        background-color: rgb(204, 204, 204);
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        border-right: 1px solid black;
+        border-left: 2px solid black;
+        text-align: center;
+        height: 452px;
+        width: 600px;
+        
+        h1{
+        
+            color: rgb(206, 0, 27);
+            font-family: 'Inconsolata', monospace;
+            font-style: italic; 
+            font-weight: 900; 
+            border-bottom: 6px double black;
+            display: inline-block;
+            font-size: 2rem;
+            padding-bottom: 10px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;   
+        }
+
+        h2{      
+            color: rgb(206, 0, 27);
+            font-family: 'Inconsolata', monospace;
+        }
+        p{
+    
+            font-family: 'Bebas Neue', cursive;
+            padding: 1rem;
+            color: rgb(206, 0, 27);   
+        }
+       }
+  
+    @media only screen and (max-width: 600px){
+    
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+            gap: 1.5rem;
+        }
+        .imagen_main{
+            height: 90%;
+            width: 90%;
+            margin-left: 1.5rem;               
+        }
+        .tarjeta_dos{
+            font-size: 15px;
+         
+        }
+        .tarjeta_uno{
+            font-size: 15px;
+            height: 380px;
+           }
+        .contenedor_uno{
+            font-size: 15px;
+            height: 500px;
+            width: 90%;  
+        }
+       
+    }
+    /* INDEEEEEEEEEEEEEEEX */
