@@ -92,24 +92,19 @@ footer p {
 .logo {
   width: 20%; }
 
-.tarjeta_uno {
+.tarjeta, .tarjeta_uno, .tarjeta_dos {
   text-align: center;
   width: 20rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, black 0px 0px 0px 3px;
   padding: 3rem;
   background-color: #cccccc;
   font-family: 'Bebas Neue', cursive;
-  height: 300px;
+  height: 300px; }
+
+.tarjeta_uno {
   grid-area: a3; }
 
 .tarjeta_dos {
-  text-align: center;
-  width: 20rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, black 0px 0px 0px 3px;
-  padding: 3rem;
-  background-color: #cccccc;
-  font-family: 'Bebas Neue', cursive;
-  height: 300px;
   grid-area: a4; }
 
 .contenedor_uno {
@@ -333,15 +328,21 @@ h2 {
   gap: 4rem;
   background-image: linear-gradient(to right, red, black); }
 
-.mensaje {
-  font-family: 'Bebas Neue', cursive;
-  margin: 1.5rem 1.5rem;
-  grid-area: a1; }
-
-.mensaje h1 {
-  margin: 2rem;
+.mensaje_titulo {
+  font-size: 35px;
+  color: black;
   text-align: start;
-  font-family: 'Inconsolata', monospace; }
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
+  margin-top: 1rem; }
+
+.mensaje_parrafo {
+  font-size: 20px;
+  color: white;
+  text-align: start;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
+  margin-top: 1rem; }
 
 .formulario {
   font-family: 'Bebas Neue', cursive;

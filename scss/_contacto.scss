@@ -14,16 +14,27 @@
         background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
         
     }
-    .mensaje{    
-        font-family: 'Bebas Neue', cursive;
-        margin:1.5rem 1.5rem ;
-        grid-area: a1; 
+
+
+    @mixin estilo_mensaje($color_letra, $tamanio_letra, ) {
+
+        font-size: $tamanio_letra;
+        color: $color_letra;
+        text-align: start;
+        font-family:'Courier New', Courier, monospace;
+        padding: 15px;
+        margin-top: 1rem;
+        
+    }
+
+
+    .mensaje_titulo{    
+        @include estilo_mensaje(black, 35px)
     }
     
-    .mensaje h1{
-        margin: 2rem;
-        text-align: start;
-        font-family: 'Inconsolata', monospace;    
+    .mensaje_parrafo{
+        @include estilo_mensaje(white, 20px)
+     
     }
     
     .formulario{
