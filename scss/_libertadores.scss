@@ -22,7 +22,7 @@
      }
     
      .h2_lib{
-        font-family: 'Inconsolata', monospace;
+        font-family: 'Courier New', Courier, monospace;
         text-align: center;
         background-color: rgb(150, 0, 0);
         padding: 1rem;
@@ -34,13 +34,13 @@
     
      .h1_libertadores{
         text-align: center;
-        font-family: 'Inconsolata', monospace;
+        font-family: 'Courier New', Courier, monospace;
         padding: 1rem;
      }
     
      .fondo{
         background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
-        height: 1825px;
+        height: 1850px;
     }
     
     @media only screen and (max-width:600px){
@@ -48,6 +48,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+           
         }
         .iframe{
             height: 65%;
@@ -58,6 +59,7 @@
         .video{
             width: 90%;
         }
+       
     }
     
     

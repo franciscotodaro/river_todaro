@@ -13,12 +13,11 @@ header {
   border-bottom: 3px solid black;
   height: 7rem;
   background-color: #cccccc;
-  position: sticky;
   top: 0px; }
 
 .listas {
   list-style-type: none;
-  font-family: 'Inconsolata', monospace; }
+  font-family: 'Courier New', Courier, monospace; }
 
 .listas li {
   display: inline-block;
@@ -43,7 +42,7 @@ footer {
 footer p {
   margin-top: 1.5rem;
   font-size: larger;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 900; }
 
 .bi-instagram {
@@ -90,16 +89,16 @@ footer p {
   margin-bottom: 5px; }
 
 .logo {
-  width: 20%; }
+  width: 15%; }
 
 .tarjeta, .tarjeta_uno, .tarjeta_dos {
-  text-align: center;
+  text-align: start;
   width: 20rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, black 0px 0px 0px 3px;
   padding: 3rem;
   background-color: #cccccc;
-  font-family: 'Bebas Neue', cursive;
-  height: 400px; }
+  font-family: 'Courier New', Courier, monospace;
+  height: 440px; }
 
 .tarjeta_uno {
   grid-area: a3; }
@@ -118,21 +117,20 @@ footer p {
   width: 600px; }
   .contenedor_uno h1 {
     color: #ce001b;
-    font-family: 'Inconsolata', monospace;
-    font-style: italic;
-    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
     border-bottom: 6px double black;
     display: inline-block;
     font-size: 2rem;
     padding-bottom: 10px;
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
   .contenedor_uno h2 {
     color: #ce001b;
-    font-family: 'Inconsolata', monospace; }
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px; }
   .contenedor_uno p {
-    font-family: 'Bebas Neue', cursive;
-    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
     color: #ce001b; }
 
 @media only screen and (max-width: 600px) {
@@ -152,7 +150,7 @@ footer p {
     height: 380px; }
   .contenedor_uno {
     font-size: 15px;
-    height: 500px;
+    height: 550px;
     width: 90%; } }
 
 /* INDEEEEEEEEEEEEEEEX */
@@ -161,45 +159,63 @@ footer p {
   background-image: linear-gradient(to right, red, black);
   padding: 2rem; }
 
-.fotos_uno {
-  width: 100%;
-  height: auto;
-  border: 3px solid black; }
-
-.contenedor_galeria {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  grid-gap: 10px; }
-
 .galeria_h1 {
   text-align: center;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-style: italic;
   font-weight: 900;
   font-size: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  color: white; }
 
-.fotos_uno:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  border-radius: 15px;
-  transition: all 2s;
-  transform: scale(1.15); }
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 6fr);
+  margin-left: 5rem;
+  margin-right: 5rem; }
+
+.contenedor figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  border: solid 3px white; }
+
+.contenedor figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out; }
+
+.contenedor figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(150, 0, 0, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding-top: 2rem;
+  font-family: 'Courier New', Courier, monospace; }
+
+.contenedor figure:hover > .capa {
+  opacity: 1;
+  visibility: visible; }
 
 @media only screen and (max-width: 600px) {
   header {
     position: inherit;
     height: 250px; }
-  .row {
+  .contenedor {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 3rem; }
-  .fotos_uno {
-    width: 150px;
-    height: 150px; } }
+    justify-content: space-between;
+    align-items: center; } }
 
 /* GALERIAAAA RIVEEEEEEEER */
 /* LIBERTADORES RIVEEEEEEEER */
@@ -220,7 +236,7 @@ footer p {
   border: 3px solid #960000; }
 
 .h2_lib {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   background-color: #960000;
   padding: 1rem; }
@@ -230,12 +246,12 @@ footer p {
 
 .h1_libertadores {
   text-align: center;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Courier New', Courier, monospace;
   padding: 1rem; }
 
 .fondo {
   background-image: linear-gradient(to right, red, black);
-  height: 1825px; }
+  height: 1850px; }
 
 @media only screen and (max-width: 600px) {
   .main_libertadores {
@@ -265,13 +281,13 @@ footer p {
 .div_estadio {
   background-color: #cccccc;
   border: 3px solid black;
-  height: 1750px; }
-  .div_estadio .texto {
+  height: 1850px; }
+  .div_estadio .texto, .div_estadio .texto_h1, .div_estadio .texto_p {
     grid-area: a1;
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Courier New', Courier, monospace;
     color: #960000;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -295,13 +311,13 @@ footer p {
 
 h2 {
   margin-bottom: 1rem;
-  font-family: 'Inconsolata', monospace; }
+  font-family: 'Courier New', Courier, monospace; }
 
 @media only screen and (max-width: 600px) {
   .div_estadio {
     display: flex;
     flex-direction: column;
-    height: 1640px;
+    height: 1950px;
     justify-content: space-around;
     align-content: center; }
   .templo {
@@ -318,7 +334,7 @@ h2 {
 /* CONTACTO RIVEEEEEEEEER */
 .main_contacto {
   width: 100%;
-  height: 698px;
+  height: 660px;
   display: grid;
   grid-template-columns: 60% 30%;
   grid-template-rows: 500px;
@@ -329,37 +345,62 @@ h2 {
   background-image: linear-gradient(to right, red, black); }
 
 .mensaje_titulo {
-  font-size: 35px;
+  font-size: 30px;
   color: black;
   text-align: start;
   font-family: 'Courier New', Courier, monospace;
-  padding: 15px;
+  padding: 10px;
   margin-top: 1rem; }
 
 .mensaje_parrafo {
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   text-align: start;
   font-family: 'Courier New', Courier, monospace;
-  padding: 15px;
+  padding: 10px;
   margin-top: 1rem; }
 
 .formulario {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Courier New', Courier, monospace;
   border: 3px solid black;
-  padding: 2rem;
+  padding: 0.5rem;
   text-align: center;
   background-color: #cccccc;
   grid-area: a2;
-  margin-top: 22px; }
+  margin-top: 1px; }
 
 @media only screen and (max-width: 600px) {
   .main_contacto {
     display: flex;
     flex-direction: column;
-    height: 900px;
+    height: 1200px;
     gap: 1rem; }
   .formulario {
     margin-bottom: 2rem; } }
 
 /* CONTACTO RIVEEEEEEEEER */
+.texto, .texto_h1, .texto_p {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  color: #960000;
+  padding: 1rem;
+  text-align: start; }
+
+.texto_h1 {
+  font-size: 3rem; }
+
+.texto_p {
+  font-size: 1rem; }
+
+.div_madrid {
+  background-color: #cccccc;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+@media only screen and (max-width: 600px) {
+  .img {
+    width: 75%;
+    height: 75%; } }

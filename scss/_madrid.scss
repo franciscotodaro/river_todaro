@@ -1,0 +1,37 @@
+.texto{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    color: rgb(150, 0, 0);
+    padding: 1rem;
+    text-align: start;
+}
+
+.texto_h1{
+   @extend .texto;
+   font-size: 3rem
+
+}
+.texto_p{
+    @extend .texto;
+    font-size: 1rem;
+
+}
+
+.div_madrid{
+    background-color: rgb(204, 204, 204);
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 600px ){
+   
+    .img{
+        width: 75%;
+        height: 75%;
+    }
+   
+}

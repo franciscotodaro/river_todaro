@@ -17,14 +17,14 @@
     .div_estadio{
         background-color: rgb(204, 204, 204);
         border: 3px solid black;
-        height: 1750px;
+        height: 1850px;
 
         .texto{
             grid-area: a1;
             text-align: center;
             font-size: 1rem;
             font-weight: 400;
-            font-family: 'Bebas Neue', cursive;
+            font-family: 'Courier New', Courier, monospace;
             color: rgb(150, 0, 0);
             padding: 2rem ;
             margin-bottom: 2rem;
@@ -60,7 +60,7 @@
     
     h2{
         margin-bottom: 1rem;
-        font-family: 'Inconsolata', monospace;
+        font-family: 'Courier New', Courier, monospace;
     }
  
     
@@ -69,7 +69,7 @@
         .div_estadio{
             display: flex;
             flex-direction: column;
-            height: 1640px;
+            height: 1950px;
             justify-content: space-around;
             align-content: center;
         }

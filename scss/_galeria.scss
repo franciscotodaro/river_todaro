@@ -1,63 +1,83 @@
     /* GALERIAAAA RIVEEEEEEEER */
    
     .galeria{    
-        background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
-    
+        background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));    
         padding: 2rem;
-    }
-    
-    
-    .fotos_uno{
-        width: 100%;
-        height: auto;
-        border: 3px solid rgb(0, 0, 0);        
-    }
-    
-    .contenedor_galeria{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: center;
-        grid-gap: 10px;    
-    }
-    
-    
+    }     
+     
     .galeria_h1{
         text-align: center;
-        font-family: 'Inconsolata', monospace;
+        font-family: 'Courier New', Courier, monospace;
         font-style: italic; 
         font-weight: 900; 
         font-size: 2rem;
         padding-bottom: 2rem;
+        color: white;
+    }    
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 6fr);
+        margin-left:5rem;
+        margin-right: 5rem;
     }
-    
-    .fotos_uno:hover{
-    
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-radius: 15px;
-        transition: all 2s;   
-        transform: scale(1.15);
-    
-    }
+
+
+
+    .contenedor figure{
+        position: relative;
+        height: 250px;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+        border: solid 3px rgb(255, 255, 255);
         
+    }
+
+    .contenedor figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+    }
+
+    .contenedor figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(150, 0, 0, 0.6); 
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        padding-top: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .contenedor figure:hover > .capa{
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    
     @media only screen and (max-width: 600px ){
       
         header{
             position: inherit;
             height: 250px;    
     
-        }    
-        .row{
+        }  
+        .contenedor{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            gap: 3rem;        
-        }   
-        .fotos_uno{
-            width: 150px;
-            height: 150px;
-        }
+        }  
+        
         
     }
     
